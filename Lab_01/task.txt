@@ -1,0 +1,20 @@
+Using the same flow described before, write and run an assembly program called program_3.s (to be delivered) for the RISC-V architecture.
+ 
+The program must: 
+1.	Given two arrays of 10 8-bit integer numbers (v1,v2), check if any element of v1 is included in v2, at least once. Save the matching value in a third vector (v3).  
+ 
+For example: 
+
+v1: .byte 2, 6, -3, 11, 9, 18, -13, 16, 5, 1
+v2: .byte 4, 2, -13, 3, 9, 9, 7, 16, 4, 7
+
+The third vector will be composed as follows.
+
+v3: .byte 2, 9, -13, 16
+ 
+2.	Set three flags (flag1, flag2, flag3) to indicate three conditions: 
+a.	The third vector (v3) is empty. Use one 8-bit unsigned variable (flag1) to flag the condition. The variable will be equal to 1 if v3 is empty, 0 otherwise. 
+ 
+b.	The third vector (v3) is not empty, and each element is greater than the previous one (v3[i+1]>v3[i]). In this case, use one 8-bit unsigned variable (flag2) to flag the condition. The variable will be equal to 1 if condition is satisfied, 0 otherwise. 
+ 
+c.	The third vector (v3) is not empty, and each element is smaller than the previous one (v3[i+1]<v3[i]). In this case, use one 8-bit unsigned variable (flag3) to flag the condition. The variable will be equal to 1 if condition is satisfied, 0 otherwise.

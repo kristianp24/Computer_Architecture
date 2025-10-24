@@ -1,0 +1,23 @@
+The riscv_in_order_hen_patt.py (in the gem5 folder inside the workspace) file 
+contains the pipeline configuration. Here you can modify the operation latency and the 
+issue latency of integer and floating-point functional units (ALU, Multiplier, Divider). 
+You must configure the Gem5 simulator with the Initial Configuration as described 
+below: 
+INTEGER_ALU_LATENCY = 1  
+INTEGER_MUL_LATENCY = 1  
+INTEGER_DIV_LATENCY = 1  
+FLOAT_ALU_LATENCY = 8  
+FLOAT_MUL_LATENCY = 24  
+FLOAT_DIV_LATENCY = 42 
+
+Write an assembly program (program_1.s) for the RISCV architecture described 
+before being able to implement the following high-level code: 
+for (i = 31; i >= 0; i--) {  
+v4[i] = v1[i]*v1[i] – v2[i]; 
+v5[i] = v4[i]/v3[i] – v2[i]; 
+v6[i] = (v4[i]-v1[i])*v5[i]; 
+} 
+Assume that the vectors v1[], v2[], and v3[] have been previously allocated in 
+memory and contain 32 single-precision floating-point values; also assume that 
+v3[] does not contain any ‘0’. Additionally, the vectors v4[], v5[], v6[] are empty 
+vectors allocated in memory.
