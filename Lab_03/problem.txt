@@ -1,0 +1,23 @@
+Enhance the assembly program you created in the previous lab called program_1.s:  
+ 
+int m = 1; 
+float a, b; 
+for (i = 31; i >= 0; i--) { 
+    if (i is a multiple of 3) { 
+        a = v1[i] / ((float) m << i); /*logic shift */ 
+        m = (int) a; 
+    } else {  
+        a = v1[i] * ((float) m * i); 
+        m = (int) a; 
+    }    
+    v4[i] = a * v1[i] - v2[i]; 
+    v5[i] = v4[i]/v3[i] - b; 
+    v6[i] = (v4[i]-v1[i]) * v5[i]; 
+} 
+  
+a. Manually detect the different data, structural, and control hazards that cause a 
+pipeline stall. Report at least 3 hazards in the code (or the pipeline).
+b.Optimize the program by re-scheduling instructions to eliminate as many 
+hazards as possible. Manually calculate the number of clock cycles for the new 
+program (program_1_a.s) to execute and compare the results with those 
+obtained by the simulator. 

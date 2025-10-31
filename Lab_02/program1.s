@@ -23,6 +23,7 @@ _start:
 	la x3,v3
 	la x4,v4
 	la x5,v5
+	
 	la x6,v6
 	lw x7,d
 	addi x1,x1,128
