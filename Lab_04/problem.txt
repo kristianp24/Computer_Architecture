@@ -1,0 +1,12 @@
+Write an assembly program (program_1.s) for the RISCV architecture able to compute the output (y) of a neural computation (see the Fig. below): 
+
+x = ∑_(j=0)^(K-1)▒〖i_j*w_j+b〗
+y = f(x)
+
+where, to prevent the propagation of NaN (Not a Number), the activation function f is defined as:
+
+f(x)=(0, if the exponent part of x is equal to 0xFF, x otherwise)
+
+Assume the vectors i and w respectively store the inputs entering the neuron and the weights of the connections. 
+They contain K=16 single precision floating point elements. Assume that b is a single precision floating point constant and is equal to 0xab, and y is a single precision floating point value stored in memory.
+Compute y.
