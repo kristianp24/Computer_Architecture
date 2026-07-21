@@ -13,4 +13,5 @@ This repository contains ARM assembly exercises and lab work for computer archit
 - Problem statements and task descriptions for lab work.
 - Organized folders for each exercise and lab.
 
-The repository is focused on learning ARM assembly and exploring computer architecture concepts through practical examples.
+The repository is focused on learning ARM assembly and exploring computer architecture concepts through practical examples,
+learning how to access the memory and how to store data in the memory.
